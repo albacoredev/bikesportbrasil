@@ -60,7 +60,7 @@ const PhoneDialog = (props: Props) => {
             <p>{props.subtitle}</p>
           </div>
           <p>Depois é só informar seu telefone na loja!</p>
-          <form onSubmit={handleSubmit(onSubmit)} className="vertStack">
+          <form method="dialog" className="vertStack">
             <label className="form-control w-full max-w-xs">
               <input
                 {...register("phone", {
