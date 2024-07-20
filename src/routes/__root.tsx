@@ -68,7 +68,7 @@ export const Route = createRootRoute({
             <img
               src={Hero}
               alt=""
-              className="absolute -z-10 object-cover brightness-50"
+              className="absolute -z-10 object-cover brightness-50 w-full"
               style={{
                 height: "345px",
               }}
