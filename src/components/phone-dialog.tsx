@@ -24,7 +24,7 @@ const PhoneDialog = (props: Props) => {
 
   const {
     register,
-    handleSubmit,
+    // handleSubmit,
     setValue,
     reset,
     formState: { errors },
@@ -32,8 +32,8 @@ const PhoneDialog = (props: Props) => {
     resolver: yupResolver(schema),
   });
 
-  const onSubmit = (data: { phone: string }) =>
-    console.log({ ...data, segment: props.id });
+  // const onSubmit = (data: { phone: string }) =>
+  //   console.log({ ...data, segment: props.id });
 
   useEffect(() => {
     yup.setLocale({
