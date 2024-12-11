@@ -3,6 +3,7 @@ import { createRootRoute } from "@tanstack/react-router";
 import { TanStackRouterDevtools } from "@tanstack/router-devtools";
 import Logo from "../assets/logoSmall.webp";
 import Hero from "../assets/heroMedium.webp";
+import HeroLarge from "../assets/heroLarge.webp";
 import Insta1 from "../assets/insta1Small.webp";
 import Insta2 from "../assets/insta2Small.webp";
 import Insta3 from "../assets/insta3Small.webp";
@@ -50,94 +51,84 @@ export const Route = createRootRoute({
           subtitle="no pacote de 4 revisões"
         />
 
-        <div className="p-4 w-full">
+        <div className="p-4 w-full lg:p-8">
           <img
-            className="object-cover"
-            style={{ height: "35px", width: "150px" }}
+            className="object-cover h-[35px] lg:h-[45px]"
             src={Logo}
             alt="Bike Sport Bicicletas Logo"
           />
         </div>
-        <div className="flex flex-col gap-8 w-full">
-          <div
-            style={{
-              height: "345px",
-            }}
-            className="px-4 vertStack gap-2 bg-center bg-cover bg-blend-darken z-10 bg-background"
-          >
+        <div className="flex flex-col gap-8 w-full max-w-md lg:max-w-[1000px]">
+          <div className="px-4 vertStack gap-2 bg-center bg-cover bg-blend-darken z-10 bg-background h-[345px] lg:h-[600px]">
             <img
-              src={Hero}
+              src={HeroLarge}
               alt=""
-              className="absolute -z-10 object-cover brightness-50 w-full"
-              style={{
-                height: "345px",
-              }}
+              className="absolute -z-10 object-cover brightness-50 w-full h-[345px] lg:h-[600px] object-center"
             />
-            <h1 className="text-4xl uppercase text-center">
+            <h1 className="text-4xl lg:text-7xl uppercase text-center">
               tudo para o ciclista
             </h1>
-            <h2 className="text-sm uppercase">em são josé dos campos</h2>
+            <h2 className="text-sm uppercase lg:text-2xl">
+              em são josé dos campos
+            </h2>
           </div>
-          <div className="vertStack gap-8">
+          <div className="vertStack gap-8 lg:py-16">
             <div className="vertStack gap-2">
-              <span className="text-lg">
+              <span className="text-lg lg:text-2xl">
                 <span className="font-bold">4,9</span> estrelas no Google
               </span>
               <div className="flex text-orange-400 gap-1">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
                   fill="currentColor"
+                  className="w-[16px] lg:w-[32px]"
                   viewBox="0 0 16 16"
                 >
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
                   fill="currentColor"
+                  className="w-[16px] lg:w-[32px]"
                   viewBox="0 0 16 16"
                 >
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
                   fill="currentColor"
+                  className="w-[16px] lg:w-[32px]"
                   viewBox="0 0 16 16"
                 >
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
                   fill="currentColor"
+                  className="w-[16px] lg:w-[32px]"
                   viewBox="0 0 16 16"
                 >
                   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
                 </svg>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
                   fill="currentColor"
+                  className="w-[16px] lg:w-[32px]"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.354 5.119 7.538.792A.52.52 0 0 1 8 .5c.183 0 .366.097.465.292l2.184 4.327 4.898.696A.54.54 0 0 1 16 6.32a.55.55 0 0 1-.17.445l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256a.5.5 0 0 1-.146.05c-.342.06-.668-.254-.6-.642l.83-4.73L.173 6.765a.55.55 0 0 1-.172-.403.6.6 0 0 1 .085-.302.51.51 0 0 1 .37-.245zM8 12.027a.5.5 0 0 1 .232.056l3.686 1.894-.694-3.957a.56.56 0 0 1 .162-.505l2.907-2.77-4.052-.576a.53.53 0 0 1-.393-.288L8.001 2.223 8 2.226z" />
                 </svg>
               </div>
-              <span className="text-sm font-light">+200 avaliações</span>
+              <span className="text-sm font-light lg:text-xl">
+                +200 avaliações
+              </span>
             </div>
             <a
               href="https://wa.me/5512996579431"
               target="_blank"
               rel="noopener"
             >
-              <button className="btn btn-primary uppercase">
+              <button className="btn btn-primary uppercase lg:btn-lg">
                 Entre em contato
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -151,58 +142,51 @@ export const Route = createRootRoute({
               </button>
             </a>
           </div>
-          <div className="w-full flex justify-center">
-            <div className="max-w-md flex flex-col gap-4">
-              <div className="px-8">
-                <h2 className="text-3xl">Bikes de qualidade</h2>
-                <h3 className="text-xl font-light">
-                  que melhoram seu desempenho
-                </h3>
+          <div className="feature">
+            <div className="title">
+              <h2>Bikes de qualidade</h2>
+              <h3>que melhoram seu desempenho</h3>
+            </div>
+            <div className="flex gap-1">
+              <div className="flex flex-col gap-2 w-full">
+                <img
+                  src={BikeAdultMedium}
+                  alt=""
+                  className="object-cover h-[170px] lg:h-[420px] w-full"
+                />
+                <h3 className="ml-2 text-sm lg:text-xl">Adulto</h3>
               </div>
-              <div className="flex gap-1">
-                <div className="flex flex-col gap-2">
-                  <img
-                    src={BikeAdultMedium}
-                    alt=""
-                    style={{ height: "170px", width: "140px" }}
-                    className="object-cover"
-                  />
-                  <h3 className="ml-2 text-sm">Adulto</h3>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <img
-                    src={BikeKidSmall}
-                    alt=""
-                    style={{ height: "170px", width: "140px" }}
-                    className="object-cover"
-                  />
-                  <h3 className="ml-2 text-sm">Infantil</h3>
-                </div>
-                <div className="flex flex-col gap-2">
-                  <img
-                    src={BikeUsedSmall}
-                    alt=""
-                    style={{ height: "170px", width: "140px" }}
-                    className="object-cover"
-                  />
-                  <h3 className="ml-2 text-sm">Usadas</h3>
-                </div>
+              <div className="flex flex-col gap-2 w-full">
+                <img
+                  src={BikeKidSmall}
+                  alt=""
+                  className="object-cover h-[170px] lg:h-[420px] w-full"
+                />
+                <h3 className="ml-2 text-sm lg:text-xl">Infantil</h3>
               </div>
-              <div className="vertStack gap-2">
-                <h2 className="text-xl">
-                  Super <span className="font-bold">brinde</span> na compra da
-                  bike!
-                </h2>
-                <button
-                  className="btn btn-primary uppercase"
-                  onClick={openBikeDialog}
-                >
-                  garantir brinde
-                </button>
+              <div className="flex flex-col gap-2 w-full">
+                <img
+                  src={BikeUsedSmall}
+                  alt=""
+                  className="object-cover h-[170px] lg:h-[420px] w-full"
+                />
+                <h3 className="ml-2 text-sm lg:text-xl">Usadas</h3>
               </div>
             </div>
+            <div className="vertStack gap-2 lg:py-8">
+              <h2 className="text-xl lg:text-2xl ">
+                Super <span className="font-bold">brinde</span> na compra da
+                bike!
+              </h2>
+              <button
+                className="btn btn-primary uppercase lg:btn-lg"
+                onClick={openBikeDialog}
+              >
+                garantir brinde
+              </button>
+            </div>
           </div>
-          <div className="bg-primary p-8 flex flex-col gap-2">
+          <div className="bg-primary p-8 flex flex-col gap-2 w-full">
             <h3 className="text-lg text-white">
               Promoções <span className="font-bold">exclusivas</span> para
               seguidores
@@ -228,79 +212,73 @@ export const Route = createRootRoute({
               </a>
             </div>
           </div>
-          <div className="w-full flex justify-center">
-            <div className="max-w-md flex flex-col gap-4">
-              <div className="px-8">
-                <h2 className="text-3xl">Equipamentos</h2>
-                <h3 className="text-xl font-light">para o pedal perfeito</h3>
-              </div>
+          <div className="feature">
+            <div className="title">
+              <h2>Equipamentos</h2>
+              <h3>para o pedal perfeito</h3>
+            </div>
 
-              <div className="flex gap-1">
-                <img
-                  style={{ height: "170px", width: "140px" }}
-                  className="object-cover"
-                  src={Insta1}
-                  alt=""
-                />
-                <img
-                  style={{ height: "170px", width: "140px" }}
-                  className="object-cover"
-                  src={Insta2}
-                  alt=""
-                />
-                <img
-                  style={{ height: "170px", width: "140px" }}
-                  className="object-cover"
-                  src={Insta3}
-                  alt=""
-                />
-              </div>
+            <div className="flex gap-1 w-full">
+              <img
+                className="object-cover h-[170px] lg:h-[420px] w-full"
+                src={Insta1}
+                alt=""
+              />
+              <img
+                className="object-cover h-[170px] lg:h-[420px] w-full"
+                src={Insta2}
+                alt=""
+              />
+              <img
+                className="object-cover h-[170px] lg:h-[420px] w-full"
+                src={Insta3}
+                alt=""
+              />
+            </div>
 
-              <div className="vertStack gap-2">
-                <h2 className="text-xl">
-                  Cashback de <span className="font-bold">10%</span> em
-                  equipamentos!
-                </h2>
-                <button
-                  className="btn btn-primary uppercase"
-                  onClick={openEquipmentDialog}
-                >
-                  garantir cashback
-                </button>
-              </div>
+            <div className="vertStack gap-2 lg:py-8">
+              <h2 className="text-xl lg:text-2xl ">
+                Cashback de <span className="font-bold">10%</span> em
+                equipamentos!
+              </h2>
+              <button
+                className="btn btn-primary uppercase lg:btn-lg"
+                onClick={openEquipmentDialog}
+              >
+                garantir cashback
+              </button>
             </div>
           </div>
-          <div className="w-full flex justify-center">
-            <div className="max-w-md flex flex-col gap-4">
-              <div className="px-8">
-                <h2 className="text-3xl">Manutenção Confiável</h2>
-                <h3 className="text-xl font-light">
-                  com sistema{" "}
-                  <span className="text-primary font-bold">leva e traz</span>
-                </h3>
+          <div className="feature">
+            <div className="title">
+              <h2 className="text-3xl">Manutenção Confiável</h2>
+              <h3 className="text-xl font-light">
+                com sistema{" "}
+                <span className="text-primary font-bold">leva e traz</span>
+              </h3>
+            </div>
+
+            <img
+              className="object-cover h-[170px] lg:h-[420px] w-full"
+              src={Repair}
+              alt=""
+            />
+
+            <div className="vertStack gap-2 lg:py-8">
+              <div className="text-center">
+                <h2 className="text-xl lg:text-2xl">
+                  Desconto de <span className="font-bold">30%</span>
+                </h2>
+                <h2 className="font-light lg:text-lg">
+                  no pacote de 4 revisões
+                </h2>
               </div>
-              <div className="vertStack px-8">
-                <img
-                  className="object-cover"
-                  src={Repair}
-                  style={{ height: "170px", width: "366px" }}
-                  alt=""
-                />
-              </div>
-              <div className="vertStack gap-2">
-                <div className="text-center">
-                  <h2 className="text-xl">
-                    Desconto de <span className="font-bold">30%</span>
-                  </h2>
-                  <h2 className="font-light">no pacote de 4 revisões</h2>
-                </div>
-                <button
-                  className="btn btn-primary uppercase"
-                  onClick={openMaintenanceDialog}
-                >
-                  garantir desconto
-                </button>
-              </div>
+              <button
+                className="btn btn-primary uppercase lg:btn-lg"
+                onClick={openMaintenanceDialog}
+              >
+                garantir desconto
+              </button>
             </div>
           </div>
 
@@ -388,36 +366,15 @@ export const Route = createRootRoute({
             </div>
           </div>
           <div className="mt-16 flex flex-col gap-8 px-4 w-full">
-            <a
-              className="text-sm underline"
-              href="https://www.gnunezandrade.dev/"
-              target="_blank"
-              rel="noopener"
-            >
-              gandrade Marketing Digital
-            </a>
+            <span className="text-sm">Albacore Marketing Digital</span>
 
             <div className="flex flex-col text-xs font-light gap-3">
               <a
-                href="https://www.pexels.com/video/wood-sunset-water-camera-4649965/"
+                href="https://www.pexels.com/photo/man-sitting-beside-bicycle-2270328/"
                 target="_blank"
                 rel="noopener"
               >
-                Video by Pavel Danilyuk
-              </a>
-              <a
-                href="https://www.pexels.com/video/little-boy-riding-a-bike-3683318/"
-                target="_blank"
-                rel="noopener"
-              >
-                Video by samazing family
-              </a>
-              <a
-                href="https://www.pexels.com/video/person-biking-on-the-forest-5659532/"
-                target="_blank"
-                rel="noopener"
-              >
-                Video by Be The Observer
+                Photo by Dó Castle
               </a>
               <a
                 href="https://www.pexels.com/photo/a-child-wearing-a-beanie-and-a-red-jacket-riding-a-bike-5792904/"

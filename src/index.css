@@ -9,3 +9,19 @@
 .horStack {
   @apply flex justify-center items-center;
 }
+
+.feature {
+  @apply w-full flex items-center flex-col gap-4;
+}
+
+.feature > .title {
+  @apply px-8 text-center;
+}
+
+.feature > .title > h2 {
+  @apply text-3xl lg:text-5xl;
+}
+
+.feature > .title > h3 {
+  @apply text-xl lg:text-2xl font-light;
+}
